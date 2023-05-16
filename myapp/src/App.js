@@ -8,8 +8,7 @@ function App() {
       <header className="App-header">
       <Statistic/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+categories of persons        </p>
         <a
           className="App-link"
           href="https://reactjs.org"

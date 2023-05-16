@@ -2,8 +2,9 @@ import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 import './statistics.css'
+import employer from './../img/person-svgrepo-com.svg'
+import student from './../img/student-person-part-2-svgrepo-com.svg'
 ChartJS.register(ArcElement, Tooltip, Legend);
-
 
 
 const Statistic = () => {
@@ -30,9 +31,9 @@ const Statistic = () => {
 
         <div>
                     <div className='items'>
-        <div className='itemx'  > <img src="" alt="" />  student  </div>
-        <div className='itemx'  > <img src="" alt="" />  teacher  </div>
-        <div className='itemx'  ><img src="" alt="" />  employer   </div>
+        <div className='itemx'  > <img src={student} alt="" /><h3>50</h3> <p>student</p>    </div>
+        <div className='itemx'  > <img src={employer} alt="" /> <h3>3000</h3> <p>teacher</p>    </div>
+        <div className='itemx'  ><img src={employer} alt="" />  <h3>60</h3> <p>employer</p>     </div>
 
         </div> 
         <Doughnut data={data}  />    
